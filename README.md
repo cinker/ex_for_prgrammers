@@ -16,20 +16,26 @@ Test Driven Development
 
 写一个tip calculation
 需要问的问题是
-
+```
 What formula do you want to use? Can you explain how the tip should be calculated?
 What’s the tip percentage? Is it 15% or should the user be able to modify it?
 What should the program display on the screen when it starts?
 What should the program display for its output? Do you want to see the tip and the total or just the total?
+```
+
 重述问题
 
+```
 Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. The program must compute the tip and then display both the tip and the total amount of the bill.
-输出例子
+```
 
+输出例子
+```
 ​What is the bill? $200
 ​What is the tip percentage? 15
 ​The tip is $30.00
 ​The total is $230.00
+```
 将大问题分解成小问题，有些问题的输出能成为有些问题的输入
 
 使用伪代码
