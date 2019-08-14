@@ -1,3 +1,4 @@
 [
-  "test_tip_calculation.py::test_tip_calc"
+  "test_tip_calculation.py::test_tip_calc",
+  "test_tip_calculation.py::test_tip_calc_char"
 ]
