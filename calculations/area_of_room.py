@@ -15,14 +15,22 @@ the length and width of the room in feet. Then display the area in both square f
 ​ 	27.871 square meters
 """
 import numbers
+import math
+
+CONVERSION_RATIO=0.09290304
 
 def area_of_room(length_in_feet, width_in_feet):
-    if isinstance(length_in_feet, numbers.Number) and isinstance(width_in_feet, numbers.Number):
-        length_in_feet=float(length_in_feet)
-        width_in_feet=float(width_in_feet)
+    try:
+        length_in_feet=int(length_in_feet)
+        width_in_feet=int(width_in_feet)
+        area_by_feet = length_in_feet * width_in_feet
+        area_by_sm = area_by_feet*CONVERSION_RATIO
         print("You entered dimensions of {length_in_feet} feet by {width_in_feet} feet.".format(width_in_feet=width_in_feet, length_in_feet=length_in_feet))
-    else:
-        print("Please enter a valid number for the bill amount.")
+        print("The area is")
+        print("{area_by_feet} square feet".format(area_by_feet=area_by_feet))
+        print("{area_by_sm:.3f} square feet".format(area_by_sm=area_by_sm))
+    except:
+        print("Please enter a valid number.")
 
 if __name__ == "__main__":
     length_in_feet = input("What is the length of the room in feet? ")
